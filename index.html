@@ -304,6 +304,23 @@
     #servicos .section-sub { color: var(--mid); }
     .section-inner { max-width: 1200px; margin: 0 auto; padding: 6rem 2rem; }
 
+    /* ── SCROLL ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: opacity 0.7s cubic-bezier(0.25, 0.4, 0.25, 1), transform 0.7s cubic-bezier(0.25, 0.4, 0.25, 1);
+    }
+    .reveal.reveal--left {
+      transform: translateX(-40px);
+    }
+    .reveal.reveal--right {
+      transform: translateX(40px);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
     .services-grid {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
       margin-top: 3.5rem; border: 1px solid var(--beige-200); border-radius: 8px; overflow: hidden;
@@ -759,36 +776,36 @@
 <!-- ── O QUE FAZEMOS ── -->
 <section id="servicos">
   <div class="section-inner">
-    <div class="section-tag">O que fazemos</div>
-    <h2 class="section-title">Os Nossos Serviços</h2>
-    <p class="section-sub">Oferecemos soluções completas de escavação, demolição e terraplanagem para obras de todas as dimensões, com rigor e segurança.</p>
+    <div class="section-tag reveal">O que fazemos</div>
+    <h2 class="section-title reveal">Os Nossos Serviços</h2>
+    <p class="section-sub reveal">Oferecemos soluções completas de escavação, demolição e terraplanagem para obras de todas as dimensões, com rigor e segurança.</p>
     <div class="services-grid">
-      <div class="service-card">
+      <div class="service-card reveal" style="transition-delay:0.05s">
         <div class="svc-icon">⛏️</div>
         <h3>Escavações</h3>
         <p>Fundações, valas, caves e terraços com equipamentos modernos e total precisão técnica.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card reveal" style="transition-delay:0.1s">
         <div class="svc-icon">🏗️</div>
         <h3>Demolições</h3>
         <p>Demolição controlada de edifícios e estruturas com gestão responsável de resíduos.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card reveal" style="transition-delay:0.15s">
         <div class="svc-icon">🚜</div>
         <h3>Terraplanagem</h3>
         <p>Nivelamento e preparação de terrenos para construção civil e projetos de urbanização.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card reveal" style="transition-delay:0.2s">
         <div class="svc-icon">🔩</div>
         <h3>Movimento de Terras</h3>
         <p>Transporte e gestão de terras com correto encaminhamento de resíduos e limpeza de obra.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card reveal" style="transition-delay:0.25s">
         <div class="svc-icon">🏠</div>
         <h3>Obras de Infraestrutura</h3>
         <p>Abertura de valas para saneamento, eletricidade, água e telecomunicações.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card reveal" style="transition-delay:0.3s">
         <div class="svc-icon">🔧</div>
         <h3>Fundações Especiais</h3>
         <p>Fundações profundas, muros de suporte e contenção periférica adaptados a cada terreno.</p>
@@ -801,7 +818,7 @@
 <section id="sobre">
   <div class="section-inner">
     <div class="about-grid">
-      <div style="position:relative;">
+      <div style="position:relative;" class="reveal reveal--left">
         <div class="about-img-wrap">
           <img src="escavaco2.jpeg" alt="Escavação C.A" />
         </div>
@@ -810,7 +827,7 @@
           <div class="about-badge-label">Anos de Obra</div>
         </div>
       </div>
-      <div class="about-content">
+      <div class="about-content reveal reveal--right">
         <div class="section-tag">Quem somos</div>
         <h2 class="section-title">Experiência e Dedicação ao Serviço da Obra</h2>
         <p class="section-sub">A C.A Escavações é uma empresa de referência no setor da construção civil, especializada em escavações e demolições em todo o território nacional.</p>
@@ -831,27 +848,27 @@
 <!-- ── PROJETOS ── -->
 <section id="projetos">
   <div class="section-inner">
-    <div class="section-tag">Portfólio</div>
-    <h2 class="section-title">Projetos Realizados</h2>
-    <p class="section-sub">Algumas das obras que executámos com excelência técnica, dentro do prazo e do orçamento.</p>
+    <div class="section-tag reveal">Portfólio</div>
+    <h2 class="section-title reveal">Projetos Realizados</h2>
+    <p class="section-sub reveal">Algumas das obras que executámos com excelência técnica, dentro do prazo e do orçamento.</p>
     <div class="projects-list">
-      <div class="project-item">
+      <div class="project-item reveal" style="transition-delay:0.05s">
         <span class="project-name">Escavação Fundação</span>
         <span class="project-arrow">→</span>
       </div>
-      <div class="project-item">
+      <div class="project-item reveal" style="transition-delay:0.1s">
         <span class="project-name">Demolição Edifício</span>
         <span class="project-arrow">→</span>
       </div>
-      <div class="project-item">
+      <div class="project-item reveal" style="transition-delay:0.15s">
         <span class="project-name">Terraplanagem Industrial</span>
         <span class="project-arrow">→</span>
       </div>
-      <div class="project-item">
+      <div class="project-item reveal" style="transition-delay:0.2s">
         <span class="project-name">Obra de Infraestrutura Viária</span>
         <span class="project-arrow">→</span>
       </div>
-      <div class="project-item">
+      <div class="project-item reveal" style="transition-delay:0.25s">
         <span class="project-name">Remoção de Entulhos</span>
         <span class="project-arrow">→</span>
       </div>
@@ -864,8 +881,8 @@
   <div class="diff-bg"></div>
   <div class="diff-inner">
     <div>
-      <div class="section-tag">Diferenciais</div>
-      <h2 class="section-title">Por que Escolher a C.A Escavações?</h2>
+      <div class="section-tag reveal">Diferenciais</div>
+      <h2 class="section-title reveal">Por que Escolher a C.A Escavações?</h2>
       <p class="section-sub" style="margin-bottom:2rem;">Mais de uma década a executar projetos com excelência, segurança e total compromisso com os nossos clientes.</p>
       <div class="diff-items">
         <div class="diff-item">
@@ -936,10 +953,10 @@
 <!-- ── TESTEMUNHOS ── -->
 <section id="depoimentos">
   <div class="section-inner">
-    <div class="section-tag" style="color:var(--orange);">Depoimentos</div>
-    <h2 class="section-title">O que Dizem os Nossos Clientes</h2>
+    <div class="section-tag reveal" style="color:var(--orange);">Depoimentos</div>
+    <h2 class="section-title reveal">O que Dizem os Nossos Clientes</h2>
     <div class="testimonials-grid">
-      <div class="testimonial-card">
+      <div class="testimonial-card reveal" style="transition-delay:0.05s">
         <div class="stars">★★★★★</div>
         <p class="t-text">"Trabalho impecável na demolição do nosso armazém. Cumpriram o prazo e o orçamento à risca. Muito profissional."</p>
         <div class="t-author">
@@ -950,7 +967,7 @@
           </div>
         </div>
       </div>
-      <div class="testimonial-card">
+      <div class="testimonial-card reveal" style="transition-delay:0.1s">
         <div class="stars">★★★★★</div>
         <p class="t-text">"Contratei para a escavação da fundação da minha moradia. Qualidade excelente, rápido e sem transtornos. Recomendo!"</p>
         <div class="t-author">
@@ -961,7 +978,7 @@
           </div>
         </div>
       </div>
-      <div class="testimonial-card">
+      <div class="testimonial-card reveal" style="transition-delay:0.15s">
         <div class="stars">★★★★★</div>
         <p class="t-text">"Parceiros de confiança há 5 anos. Todos os projetos foram executados com perfeição e dentro do prazo estabelecido."</p>
         <div class="t-author">
@@ -1125,6 +1142,17 @@
 </footer>
 
 <script>
+  /* ── SCROLL REVEAL ── */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 20);
