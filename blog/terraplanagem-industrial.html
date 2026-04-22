@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog — Guerreiro &amp; Silva Construção</title>
+  <title>Terraplanagem Industrial — Guerreiro & Silva Construção</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
@@ -38,24 +38,23 @@
     @media (max-width: 768px) { .nav-links { display: none; } .hamburger { display: flex; } .mobile-menu { display: block; } .nav-brand img { height: 120px !important; top: 8px !important; } .nav-brand-name { font-size: 1.05rem; } .nav-brand-sub { font-size: 0.61rem; } }
     .page-hero { padding: 140px 2rem 80px; background: var(--dark-2); position: relative; overflow: hidden; }
     .page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 80% at 80% 50%, rgba(224,123,26,0.12) 0%, transparent 60%); }
-    .page-hero-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; }
+    .page-hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; }
     .page-eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'Oswald', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--orange); margin-bottom: 1rem; }
     .page-eyebrow::before, .page-eyebrow::after { content: ''; display: inline-block; width: 22px; height: 2px; background: var(--orange); }
-    .page-hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; color: #FAF7F2; text-transform: uppercase; margin-bottom: 1rem; }
-    .page-hero p { font-size: 1rem; color: var(--text-muted); max-width: 540px; line-height: 1.75; }
-    .section-inner { max-width: 1200px; margin: 0 auto; padding: 6rem 2rem; }
-    .blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; margin-top: 3rem; }
-    .blog-card { background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid var(--beige-200); box-shadow: 0 2px 12px rgba(28,24,18,0.06); transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(28,24,18,0.12); }
-    .blog-img { width: 100%; height: 200px; object-fit: cover; display: block; background: var(--beige-200); }
-    .blog-img-placeholder { width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; font-size: 3rem; background: linear-gradient(135deg, var(--beige-100), var(--beige-200)); }
-    .blog-body { padding: 1.5rem; }
-    .blog-tag { display: inline-block; font-family: 'Oswald', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); background: rgba(224,123,26,0.1); padding: 0.2rem 0.6rem; border-radius: 3px; margin-bottom: 0.75rem; }
-    .blog-card h3 { font-size: 1.05rem; font-weight: 600; color: var(--dark); margin-bottom: 0.6rem; text-transform: uppercase; line-height: 1.3; }
-    .blog-card p { font-size: 0.85rem; color: var(--mid); line-height: 1.7; margin-bottom: 1.2rem; }
-    .blog-meta { display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; color: var(--mid); border-top: 1px solid var(--beige-200); padding-top: 1rem; }
-    .blog-read { font-family: 'Oswald', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--orange); text-decoration: none; transition: color 0.2s ease; }
-    .blog-read:hover { color: var(--orange-dark); }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 700; color: #FAF7F2; text-transform: uppercase; margin-bottom: 1rem; }
+    .article-meta { display: flex; align-items: center; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap; }
+    .article-tag { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); background: rgba(224,123,26,0.15); padding: 0.25rem 0.7rem; border-radius: 3px; }
+    .article-date { font-size: 0.82rem; color: var(--text-muted); }
+    .article-body { max-width: 800px; margin: 0 auto; padding: 5rem 2rem 6rem; }
+    .article-body h2 { font-size: 1.6rem; font-weight: 700; color: var(--dark); text-transform: uppercase; margin: 2.5rem 0 1rem; }
+    .article-body p { font-size: 1rem; color: var(--mid); line-height: 1.8; margin-bottom: 1.4rem; }
+    .article-body ul { margin: 0 0 1.4rem 1.5rem; }
+    .article-body ul li { font-size: 1rem; color: var(--mid); line-height: 1.8; margin-bottom: 0.4rem; }
+    .article-body ul li::marker { color: var(--orange); }
+    .article-highlight { background: var(--beige-100); border-left: 4px solid var(--orange); border-radius: 0 6px 6px 0; padding: 1.25rem 1.5rem; margin: 2rem 0; }
+    .article-highlight p { margin: 0; font-size: 0.95rem; color: var(--dark); }
+    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-family: 'Oswald', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange); text-decoration: none; margin-bottom: 3rem; transition: gap 0.2s ease; }
+    .back-link:hover { gap: 0.7rem; }
     #cta-band { background: var(--orange); position: relative; overflow: hidden; }
     #cta-band::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 100% at 100% 50%, rgba(245,197,24,0.35) 0%, transparent 60%); }
     .cta-inner { max-width: 1200px; margin: 0 auto; padding: 5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; position: relative; z-index: 2; flex-wrap: wrap; }
@@ -84,10 +83,8 @@
     .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(37,211,102,0.5); text-decoration: none; transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1); }
     .wa-float:hover { transform: scale(1.12); }
     .wa-float svg { width: 26px; height: 26px; fill: #fff; }
-    .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.7s cubic-bezier(0.25, 0.4, 0.25, 1), transform 0.7s cubic-bezier(0.25, 0.4, 0.25, 1); }
-    .reveal.visible { opacity: 1; transform: translate(0, 0); }
-    @media (max-width: 900px) { .blog-grid { grid-template-columns: 1fr 1fr; } .footer-top { grid-template-columns: 1fr 1fr; } .cta-inner { flex-direction: column; } }
-    @media (max-width: 600px) { .blog-grid { grid-template-columns: 1fr; } .footer-top { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; } .cta-inner { flex-direction: column; } }
+    @media (max-width: 600px) { .footer-top { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -96,95 +93,84 @@
 </a>
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <img src="brand_assets/logo.png.png" alt="Guerreiro &amp; Silva Logo" style="height:144px;width:auto;mix-blend-mode:screen;filter:brightness(1.1);position:relative;top:14px;" />
+    <a href="../index.html" class="nav-brand">
+      <img src="../brand_assets/logo.png.png" alt="Guerreiro &amp; Silva Logo" style="height:144px;width:auto;mix-blend-mode:screen;filter:brightness(1.1);position:relative;top:14px;" />
       <div><span class="nav-brand-name">GUERREIRO & SILVA</span><span class="nav-brand-sub">Construção Lda</span></div>
     </a>
     <div class="nav-links">
-      <a href="servicos.html">Serviços</a><a href="sobre.html">Sobre</a><a href="projetos.html">Projetos</a><a href="clientes.html">Clientes</a><a href="blog.html" class="active">Blog</a>
-      <a href="orcamento.html" class="btn-nav">Orçamento</a>
+      <a href="../servicos.html">Serviços</a><a href="../sobre.html">Sobre</a><a href="../projetos.html">Projetos</a><a href="../clientes.html">Clientes</a><a href="../blog.html" class="active">Blog</a>
+      <a href="../orcamento.html" class="btn-nav">Orçamento</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="servicos.html">Serviços</a><a href="sobre.html">Sobre</a><a href="projetos.html">Projetos</a><a href="clientes.html">Clientes</a><a href="blog.html">Blog</a>
-  <a href="orcamento.html" class="btn-nav">Orçamento</a>
+  <a href="../servicos.html">Serviços</a><a href="../sobre.html">Sobre</a><a href="../projetos.html">Projetos</a><a href="../clientes.html">Clientes</a><a href="../blog.html">Blog</a>
+  <a href="../orcamento.html" class="btn-nav">Orçamento</a>
 </div>
 
 <div class="page-hero">
   <div class="page-hero-inner">
-    <div class="page-eyebrow">Artigos</div>
-    <h1>Blog</h1>
-    <p>Dicas, novidades e conhecimento sobre construção, escavação e demolição para o seu projeto.</p>
+    <div class="page-eyebrow">Terraplanagem</div>
+    <h1>Terraplanagem Industrial: Desafios e Soluções</h1>
+    <div class="article-meta">
+      <span class="article-tag">Terraplanagem</span>
+      <span class="article-date">1 Abril 2026</span>
+      <span class="article-author">Por Guerreiro & Silva</span>
+    </div>
   </div>
 </div>
 
-<section style="background:var(--beige-50);">
-  <div class="section-inner">
-    <div class="blog-grid">
-      <div class="blog-card reveal" style="transition-delay:0.05s">
-        <div class="blog-img-placeholder">🏗️</div>
-        <div class="blog-body">
-          <span class="blog-tag">Escavação</span>
-          <h3>Como Preparar o Terreno para Fundações</h3>
-          <p>Conheça as etapas essenciais para uma escavação segura e eficiente antes de iniciar a construção da sua moradia.</p>
-          <div class="blog-meta"><span>15 Abril 2026</span><a href="blog/preparar-terreno-fundacoes.html" class="blog-read">Ler Mais →</a></div>
-        </div>
-      </div>
-      <div class="blog-card reveal" style="transition-delay:0.1s">
-        <div class="blog-img-placeholder">🔨</div>
-        <div class="blog-body">
-          <span class="blog-tag">Demolição</span>
-          <h3>Demolição Controlada: O que Precisa de Saber</h3>
-          <p>Guia completo sobre os procedimentos legais, segurança e gestão de resíduos numa demolição de edifício.</p>
-          <div class="blog-meta"><span>8 Abril 2026</span><a href="blog/demolicao-controlada.html" class="blog-read">Ler Mais →</a></div>
-        </div>
-      </div>
-      <div class="blog-card reveal" style="transition-delay:0.15s">
-        <div class="blog-img-placeholder">🚜</div>
-        <div class="blog-body">
-          <span class="blog-tag">Terraplanagem</span>
-          <h3>Terraplanagem Industrial: Desafios e Soluções</h3>
-          <p>Como abordamos projetos de grande escala com equipamentos modernos e técnicas avançadas de nivelamento.</p>
-          <div class="blog-meta"><span>1 Abril 2026</span><a href="blog/terraplanagem-industrial.html" class="blog-read">Ler Mais →</a></div>
-        </div>
-      </div>
-      <div class="blog-card reveal" style="transition-delay:0.2s">
-        <div class="blog-img-placeholder">📋</div>
-        <div class="blog-body">
-          <span class="blog-tag">Licenciamento</span>
-          <h3>Licenças de Obra: Guia Prático para 2026</h3>
-          <p>Tudo o que precisa saber sobre as licenças obrigatórias para obras de escavação e demolição em Portugal.</p>
-          <div class="blog-meta"><span>22 Março 2026</span><a href="blog/licencas-obra-2026.html" class="blog-read">Ler Mais →</a></div>
-        </div>
-      </div>
-      <div class="blog-card reveal" style="transition-delay:0.25s">
-        <div class="blog-img-placeholder">🛡️</div>
-        <div class="blog-body">
-          <span class="blog-tag">Segurança</span>
-          <h3>Normas de Segurança em Obra: As Mais Importantes</h3>
-          <p>As principais regras de segurança que a nossa equipa segue rigorosamente em cada projeto de construção.</p>
-          <div class="blog-meta"><span>15 Março 2026</span><a href="blog/normas-seguranca-obra.html" class="blog-read">Ler Mais →</a></div>
-        </div>
-      </div>
-      <div class="blog-card reveal" style="transition-delay:0.3s">
-        <div class="blog-img-placeholder">💡</div>
-        <div class="blog-body">
-          <span class="blog-tag">Dicas</span>
-          <h3>Como Escolher a Empresa Certa para a Sua Obra</h3>
-          <p>Os critérios essenciais para selecionar uma empresa de construção de confiança e evitar surpresas desagradáveis.</p>
-          <div class="blog-meta"><span>5 Março 2026</span><a href="blog/escolher-empresa-construcao.html" class="blog-read">Ler Mais →</a></div>
-        </div>
-      </div>
-    </div>
+<article class="article-body">
+  <a href="../blog.html" class="back-link">← Voltar ao Blog</a>
+
+  <p>Os projetos de terraplanagem industrial envolvem volumes de terra muito superiores aos de uma obra residencial típica. Preparar dezenas ou centenas de hectares para a implantação de parques industriais, armazéns logísticos ou infraestruturas viárias exige planeamento meticuloso, maquinaria de grande porte e experiência técnica consolidada.</p>
+
+  <h2>O que é a Terraplanagem Industrial?</h2>
+  <p>A terraplanagem industrial consiste em modelar o relevo de um terreno de grande dimensão para que este fique apto a receber edificações ou infraestruturas. Inclui cortes (remoção de material), aterros (adição de material), e a compactação do solo até às densidades exigidas pelo projeto de engenharia.</p>
+
+  <h2>Principais Desafios</h2>
+  <ul>
+    <li><strong>Volumes elevados:</strong> movimentações de 50.000 m³ a mais de 1.000.000 m³ de terra são comuns em projetos industriais.</li>
+    <li><strong>Terrenos heterogéneos:</strong> diferentes estratos geológicos (argila, areia, rocha) exigem técnicas distintas de escavação e transporte.</li>
+    <li><strong>Prazos apertados:</strong> os promotores industriais têm cronogramas rigorosos ligados a licenças e contratos de construção subsequentes.</li>
+    <li><strong>Drenagem pluvial:</strong> grandes superfícies terraplanadas precisam de sistemas de drenagem dimensionados para os caudais de ponta.</li>
+    <li><strong>Controlo ambiental:</strong> proteção de linhas de água e zonas sensíveis durante os trabalhos.</li>
+  </ul>
+
+  <h2>Equipamentos Utilizados</h2>
+  <p>A eficiência numa obra de terraplanagem industrial depende em grande parte da escolha certa de equipamentos:</p>
+  <ul>
+    <li><strong>Bulldozers de grande porte</strong> para espalhamento e nivelamento rápido de grandes áreas</li>
+    <li><strong>Giratórias de 30 a 50 toneladas</strong> para escavação em rocha ou materiais duros</li>
+    <li><strong>Camiões basculantes de 30 a 60 toneladas</strong> para transporte de volumes elevados</li>
+    <li><strong>Motoniveladoras</strong> para acabamentos de plataforma com tolerâncias milimétricas</li>
+    <li><strong>Rolos compactadores vibrantes</strong> para atingir os índices de compactação exigidos</li>
+  </ul>
+  <div class="article-highlight">
+    <p>Em projetos industriais, o controlo de compactação é fundamental. Utilizamos ensaios de Proctor e gamagrafia para verificar a densidade do aterro em tempo real, garantindo que a plataforma suporta as cargas previstas.</p>
   </div>
-</section>
+
+  <h2>Gestão de Terras: Corte-Aterro</h2>
+  <p>Uma das decisões mais importantes no projeto de terraplanagem é o balanço de terras — maximizar a utilização do material escavado no aterro do mesmo projeto, minimizando transportes a vazadouro (que são dispendiosos e têm impacto ambiental). A Guerreiro & Silva utiliza software de modelação 3D para otimizar este balanço antes do início dos trabalhos.</p>
+
+  <h2>Soluções para Solos Problemáticos</h2>
+  <p>Nem todos os solos têm capacidade de carga adequada para uso industrial. Quando o solo natural é fraco (argilas expansivas, turfas, aterros antigos), as soluções incluem:</p>
+  <ul>
+    <li>Estabilização com cal ou cimento</li>
+    <li>Substituição por material selecionado</li>
+    <li>Geossintéticos de reforço</li>
+    <li>Pré-carregamento com sobrecarga temporária</li>
+  </ul>
+
+  <h2>Conclusão</h2>
+  <p>A terraplanagem industrial bem executada é o alicerce invisível de qualquer parque industrial ou zona logística. Investir na qualidade desta fase garante que as construções subsequentes têm uma base estável e que os prazos do projeto global são cumpridos. Contacte-nos para avaliar o seu projeto de grande escala.</p>
+</article>
 
 <section id="cta-band">
   <div class="cta-inner">
     <div><h2>Tem um Projeto em Mente?</h2><p>Contacte-nos hoje e receba um orçamento gratuito e personalizado. Respondemos em menos de 24 horas.</p></div>
-    <div class="cta-buttons"><a href="orcamento.html" class="btn-dark">Solicitar Orçamento →</a><a href="tel:+351963656523" class="btn-outline-dark">📞 Ligar Agora</a></div>
+    <div class="cta-buttons"><a href="../orcamento.html" class="btn-dark">Solicitar Orçamento →</a><a href="tel:+351963656523" class="btn-outline-dark">📞 Ligar Agora</a></div>
   </div>
 </section>
 
@@ -192,16 +178,14 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand"><div class="footer-brand-name">GUERREIRO & SILVA</div><span class="footer-brand-sub">Construção Lda</span><p>Especialistas em construção, escavações e demolições com mais de 15 anos de experiência.</p></div>
-      <div class="footer-col"><h4>Serviços</h4><ul><li><a href="servicos.html">Escavações</a></li><li><a href="servicos.html">Demolições</a></li><li><a href="servicos.html">Terraplanagem</a></li><li><a href="servicos.html">Movimento de Terras</a></li></ul></div>
-      <div class="footer-col"><h4>Empresa</h4><ul><li><a href="sobre.html">Quem Somos</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="clientes.html">Clientes</a></li><li><a href="blog.html">Blog</a></li></ul></div>
-      <div class="footer-col"><h4>Contacto</h4><ul><li><a href="tel:+351963656523">+351 963 656 523</a></li><li><a href="mailto:geral@guerreirosilva.pt">geral@guerreirosilva.pt</a></li><li><a href="orcamento.html">Montijo, Portugal</a></li></ul></div>
+      <div class="footer-col"><h4>Serviços</h4><ul><li><a href="../servicos.html">Escavações</a></li><li><a href="../servicos.html">Demolições</a></li><li><a href="../servicos.html">Terraplanagem</a></li><li><a href="../servicos.html">Movimento de Terras</a></li></ul></div>
+      <div class="footer-col"><h4>Empresa</h4><ul><li><a href="../sobre.html">Quem Somos</a></li><li><a href="../projetos.html">Projetos</a></li><li><a href="../clientes.html">Clientes</a></li><li><a href="../blog.html">Blog</a></li></ul></div>
+      <div class="footer-col"><h4>Contacto</h4><ul><li><a href="tel:+351963656523">+351 963 656 523</a></li><li><a href="mailto:geral@guerreirosilva.pt">geral@guerreirosilva.pt</a></li><li><a href="../orcamento.html">Montijo, Portugal</a></li></ul></div>
     </div>
     <div class="footer-bottom"><p>© 2026 Guerreiro & Silva, Construção Lda — Todos os direitos reservados.</p><div class="social-links"><a href="#" class="social-link">📘</a><a href="#" class="social-link">📷</a><a href="#" class="social-link">💼</a></div></div>
   </div>
 </footer>
 <script>
-  const revealObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } }); }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); }, { passive: true });
   const hamburger = document.getElementById('hamburger');
